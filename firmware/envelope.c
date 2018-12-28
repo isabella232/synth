@@ -5,6 +5,11 @@
 
 #include <stdio.h>
 
+void PrintParts(Fixed1616 f) {
+	printf("   %d:%d\n", f.full >> 16, f.full & 0xFFFF);
+	printf("   %f\n", Fixed1616AsFloat(&f));
+}
+
 void reset(Envelope* e) {
 	e->state = ENVELOPE_IDLE;
 	e->counter = 0;
@@ -23,21 +28,19 @@ void EnvelopeInit(Envelope* e, float attack_seconds, float decay_seconds,
 	e->release_samples = release_seconds * SAMPLE_RATE;
 
 	// How big of a step size we take while attacking.  This gets us from 0
-	// to 1 in attack_seconds.
-	e->attack_step = Fixed1616FromInt(1);
+	// to UINT16_MAX in attack_seconds.
+	e->attack_step = Fixed1616FromInt(UINT16_MAX);
 	Fixed1616DivInt(&e->attack_step, e->attack_samples);
 
-	// How big of a step to take each time to get us from 1 to sustain
-	// level in decay_seconds.
+	// How big of a step to take each time to get us from UINT16_MAX to
+	// sustain level in decay_seconds.
 	e->decay_step = Fixed1616FromInt(UINT16_MAX - sustain_level);
-	Fixed1616DivInt(&e->decay_step, UINT16_MAX);
 	Fixed1616DivInt(&e->decay_step, e->decay_samples);
 
 	e->sustain_level = sustain_level;
 
 	// How big of a step to take each time to get us from sustain level to 0.
 	e->release_step = Fixed1616FromInt(sustain_level);
-	Fixed1616DivInt(&e->release_step, UINT16_MAX);
 	Fixed1616DivInt(&e->release_step, e->release_samples);
 
 	reset(e);
@@ -51,32 +54,33 @@ void EnvelopeRelease(Envelope* e) {
 	set_state(e, ENVELOPE_RELEASE);
 }
 
-Fixed1616 envelope_amount(Envelope* e) {
+uint16_t envelope_amount(Envelope* e) {
 	Fixed1616 f, f1;
 	switch (e->state) {
 		case ENVELOPE_IDLE:
 			f = Fixed1616FromInt(0);
 			break;
 		case ENVELOPE_ATTACK:
-			f = Fixed1616FromInt(e->counter);
-			Fixed1616Mul(&f, e->attack_step);
+			f = e->attack_step;
+			Fixed1616MulInt(&f, e->counter);
 			break;
 		case ENVELOPE_DECAY:
-			f = Fixed1616FromInt(1);
-			f1 = Fixed1616FromInt(e->counter);
-			Fixed1616Mul(&f1, e->decay_step);
+			f1 = e->decay_step;
+			Fixed1616MulInt(&f1, e->counter);
+
+			f = Fixed1616FromInt(UINT16_MAX);
 			Fixed1616Sub(&f, f1);
 			break;
 		case ENVELOPE_SUSTAIN:
 			f = Fixed1616FromInt(e->sustain_level);
 			break;
 		case ENVELOPE_RELEASE:
-			f = Fixed1616FromInt(e->release_samples - e->counter);
-			Fixed1616Mul(&f, e->release_step);
+			f = e->release_step;
+			Fixed1616MulInt(&f, e->release_samples - e->counter);
 			break;
 	}
 
-	return f;
+	return Fixed1616AsInt(&f);
 }
 
 uint16_t EnvelopeProcess(Envelope* e, uint16_t input) {
@@ -110,8 +114,5 @@ uint16_t EnvelopeProcess(Envelope* e, uint16_t input) {
 			break;
 	}
 
-	// Return an interpolated value from 0 to input.
-	Fixed1616 interp = envelope_amount(e);
-	Fixed1616MulInt(&interp, input);
-	return Fixed1616AsInt(&interp);
+	return ((uint32_t) input * envelope_amount(e)) >> 16;
 }
