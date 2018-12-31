@@ -8,7 +8,9 @@
 	(fabs(a - b) < 0.0001)
 
 #define ASSERT_EQ_FLOAT(x, f) \
-	assert(APPROX_EQ(Fixed1616AsFloat(x), f))
+ if (!APPROX_EQ(Fixed1616AsFloat(x), f)) { \
+	 printf("Error: Expected %f, but got %f\n", f, Fixed1616AsFloat(x));\
+ }
 
 void PrintParts(Fixed1616 f) {
 	printf("   %d:%d\n", f.full >> 16, f.full & 0xFFFF);
@@ -23,7 +25,7 @@ int main() {
 		ASSERT_EQ_FLOAT(&f, 0.1 * i);
 
 		f = Fixed1616FromFloat(i);
-		ASSERT_EQ_FLOAT(&f, i);
+		ASSERT_EQ_FLOAT(&f, (float) i);
 	}
 
 	printf("--------\n");
@@ -39,7 +41,7 @@ int main() {
 	printf("| Times 2\n");
 	Fixed1616MulInt(&f, 2);
 	PrintParts(f);
-	ASSERT_EQ_FLOAT(&f, 23);
+	ASSERT_EQ_FLOAT(&f, 23.0);
 
 	printf("--------\n");
 	printf("| 1.5\n");
@@ -67,7 +69,7 @@ int main() {
 	printf("| 10\n");
 	f = Fixed1616FromInt(10);
 	PrintParts(f);
-	ASSERT_EQ_FLOAT(&f, 10);
+	ASSERT_EQ_FLOAT(&f, 10.0);
 
 	printf("| Divided by 4\n");
 	Fixed1616DivInt(&f, 4);
@@ -78,11 +80,22 @@ int main() {
 	printf("| 10\n");
 	f = Fixed1616FromInt(10);
 	PrintParts(f);
-	ASSERT_EQ_FLOAT(&f, 10);
+	ASSERT_EQ_FLOAT(&f, 10.0);
 
 	printf("| Divided by 2.5\n");
 	Fixed1616Div(&f, Fixed1616FromFloat(2.5));
 	PrintParts(f);
-	ASSERT_EQ_FLOAT(&f, 4);
+	ASSERT_EQ_FLOAT(&f, 4.0);
+
+	printf("--------\n");
+	printf("| 1.5\n");
+	f = Fixed1616FromFloat(1.5);
+	PrintParts(f);
+	ASSERT_EQ_FLOAT(&f, 1.5);
+
+	printf("| Times 2.0\n");
+	Fixed1616Mul(&f, Fixed1616FromFloat(2));
+	PrintParts(f);
+	ASSERT_EQ_FLOAT(&f, 3.0);
 	return 0;
 }

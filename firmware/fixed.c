@@ -41,8 +41,15 @@ void Fixed1616MulInt(Fixed1616* fixed, uint16_t amount) {
 }
 
 void Fixed1616Mul(Fixed1616* fixed, Fixed1616 amount) {
-	fixed->full *= amount.full;
-	fixed->full >>= 16;
+	// If both numbers are greater than 1, multiplying them together will
+	// overflow our available integral precision.  To fix this we chop off
+	// 8 bits of fractional precision and do the multiplication then.
+	if (fixed->full > (1 << 16) && amount.full > (1 << 16)) {
+		fixed->full = (fixed->full >> 8) * (amount.full >> 8);
+	} else 
+		fixed->full *= amount.full;
+		fixed->full >>= 16;
+	}
 }
 
 void Fixed1616DivInt(Fixed1616* fixed, uint16_t amount) {
