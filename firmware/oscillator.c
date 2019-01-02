@@ -14,7 +14,7 @@ void OscSetFreq(Oscillator* osc, uint16_t freq_hz) {
 	// Every time we increment our phase, we want to do so by:
 	// f / SAMPLE_RATE * TableLength.
 	// We store the increment as a 32 bit fixed point 16.16 sample.
-	osc->incr = ((osc->freq_hz << 8) << 16) / SAMPLE_RATE;
+	osc->incr = ((uint32_t) osc->freq_hz << 16) / SAMPLE_RATE << 8;
 }
 
 uint16_t OscGetValue(Oscillator* osc) {
