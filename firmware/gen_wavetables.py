@@ -8,7 +8,7 @@ def PrintSineTable(max_amount, table_length, format_string, numbers_per_line = 8
         # Scale the normal -1.0 to 1.0 output to 0 to max_amount.
         val = (1.0 - (math.cos(phase) + 1.0) / 2.0) * max_amount
 
-        print(format_string % int(val), end="")
+        print(format_string % int(round(val)), end="")
         if (x + 1) % numbers_per_line == 0:
             print()
 
