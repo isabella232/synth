@@ -3,13 +3,6 @@
 #include "defines.h"
 #include "fixed.h"
 
-#include <stdio.h>
-
-void PrintParts(Fixed1616 f) {
-	printf("   %d:%d\n", f.full >> 16, f.full & 0xFFFF);
-	printf("   %f\n", Fixed1616AsFloat(&f));
-}
-
 void reset(Envelope* e) {
 	e->state = ENVELOPE_IDLE;
 	e->counter = 0;
