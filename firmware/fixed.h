@@ -10,6 +10,7 @@ typedef struct Fixed1616 {
 Fixed1616 Fixed1616FromFloat(float val);
 Fixed1616 Fixed1616FromInt(uint16_t val);
 float Fixed1616AsFloat(Fixed1616* fixed);
+uint16_t Fixed1616AsInt(Fixed1616* fixed);
 
 void Fixed1616AddInt(Fixed1616* fixed, uint16_t amount);
 void Fixed1616Add(Fixed1616* fixed, Fixed1616 amount);
