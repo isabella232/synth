@@ -100,11 +100,10 @@ uint16_t EnvelopeProcess(Envelope* e, uint16_t input) {
 			// If we're at max decay, switch to sustain.
 			if (e->counter == e->decay_samples) {
 				set_state(e, ENVELOPE_SUSTAIN);
-				return e->sustain_level;
 			}
 			break;
 		case ENVELOPE_SUSTAIN:
-			return e->sustain_level;
+			break;
 		case ENVELOPE_RELEASE:
 			// If we're at max release, switch to idle.
 			if (e->counter == e->release_samples) {
