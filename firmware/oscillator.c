@@ -2,6 +2,9 @@
 
 #include "defines.h"
 
+#include <stdio.h>
+#include <unistd.h>
+
 void OscInit(Oscillator* osc, uint16_t freq_hz, const uint16_t* wave_table) {
 	osc->phase = 0;
 	osc->wave_table = wave_table;
@@ -20,6 +23,15 @@ void OscSetFreq(Oscillator* osc, uint16_t freq_hz) {
 uint16_t OscGetValue(Oscillator* osc) {
 	// Phase is implicitly modded by 2^32 by overflow.
 	osc->phase += osc->incr;
-	return osc->wave_table[(osc->phase >> 16) & 0xFF];
+	uint16_t index = (osc->phase >> 16);
+	uint32_t sample_a = osc->wave_table[index & 0xFF];
+	uint32_t sample_b = osc->wave_table[(index + 1) & 0xFF];
+
+	// LERP between the two samples.
+	uint16_t frac = osc->phase & 0xFFFF;
+	uint16_t sample_a_portion = (sample_a * (UINT16_MAX - frac)) >> 16;
+	uint16_t sample_b_portion = (sample_b * frac) >> 16;
+
+	return sample_a_portion + sample_b_portion;
 }
 
