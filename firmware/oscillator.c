@@ -23,7 +23,7 @@ void OscSetFreq(Oscillator* osc, uint16_t freq_hz) {
 uint16_t OscGetValue(Oscillator* osc) {
 	// Phase is implicitly modded by 2^32 by overflow.
 	osc->phase += osc->incr;
-	uint8_t index = (osc->phase >> 16) & 0xFF;
+	uint8_t index = osc->phase >> 16;
 	uint32_t sample_a = osc->wave_table[index];
 	uint32_t sample_b = osc->wave_table[index + 1];
 
