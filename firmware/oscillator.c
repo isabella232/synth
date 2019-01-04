@@ -2,9 +2,6 @@
 
 #include "defines.h"
 
-#include <stdio.h>
-#include <unistd.h>
-
 void OscInit(Oscillator* osc, uint16_t freq_hz, const uint16_t* wave_table) {
 	osc->phase = 0;
 	osc->wave_table = wave_table;
