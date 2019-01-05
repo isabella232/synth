@@ -10,7 +10,7 @@ void Sequencer_Init(Sequencer* seq, uint16_t bpm, uint8_t num_steps) {
   Sequencer_SetBPM(seq, bpm);
 
   for (int i = 0; i < MAX_SEQUENCER_SIZE; ++i) {
-    SetStepValue(seq, i, 0);
+    Sequencer_SetStepValue(seq, i, 0);
   }
 
   seq->num_steps = num_steps;
@@ -45,7 +45,7 @@ uint16_t Sequencer_Get(Sequencer* seq) {
 
   ++seq->counter;
 
-  if (seq->counter < seq->pulse_width) {
+  if (seq->counter <= seq->pulse_width) {
     return seq->steps[seq->index];
   }
 
