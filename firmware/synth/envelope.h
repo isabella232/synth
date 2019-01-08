@@ -5,35 +5,35 @@
 #include "fixed.h"
 
 typedef enum EnvelopeState {
-	ENVELOPE_IDLE,
-	ENVELOPE_ATTACK,
-	ENVELOPE_DECAY,
-	ENVELOPE_SUSTAIN,
-	ENVELOPE_RELEASE,
+  ENVELOPE_IDLE,
+  ENVELOPE_ATTACK,
+  ENVELOPE_DECAY,
+  ENVELOPE_SUSTAIN,
+  ENVELOPE_RELEASE,
 } EnvelopeState;
 
 typedef struct Envelope {
-	// The length in samples of each phase of the envelope.
-	uint16_t attack_samples;
-	uint16_t decay_samples;
-	uint16_t release_samples;
+  // The length in samples of each phase of the envelope.
+  uint16_t attack_samples;
+  uint16_t decay_samples;
+  uint16_t release_samples;
 
-	// When modulating, how big of a step to take each time.
-	Fixed1616 attack_step;
-	Fixed1616 decay_step;
-	Fixed1616 release_step;
+  // When modulating, how big of a step to take each time.
+  Fixed1616 attack_step;
+  Fixed1616 decay_step;
+  Fixed1616 release_step;
 
-	uint16_t sustain_level;
+  uint16_t sustain_level;
 
-	EnvelopeState state;
+  EnvelopeState state;
 
-	uint16_t counter;
+  uint16_t counter;
 } Envelope;
 
 // Initializes the Envelope with attack, decay, and release all in seconds.
 // sustain is measured in volume.
 void EnvelopeInit(Envelope* e,
-		float attack_seconds, float decay_seconds, uint16_t sustain_level, float release_seconds);
+    float attack_seconds, float decay_seconds, uint16_t sustain_level, float release_seconds);
 
 // Triggers the envelope.
 void EnvelopeTrigger(Envelope* e);

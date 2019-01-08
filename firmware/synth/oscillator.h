@@ -4,17 +4,17 @@
 #include <stdint.h>
 
 typedef struct Oscillator {
-	// The desired frequency for this oscillator.
-	uint16_t freq_hz;
+  // The desired frequency for this oscillator.
+  uint16_t freq_hz;
 
-	// The current phase.
-	uint32_t phase;
+  // The current phase.
+  uint32_t phase;
 
-	// The pre-computed amount to increment the phase each sample.
-	uint32_t incr;
+  // The pre-computed amount to increment the phase each sample.
+  uint32_t incr;
 
-	// The wave table from which this oscillator samples.
-	const uint16_t* wave_table;
+  // The wave table from which this oscillator samples.
+  const uint16_t* wave_table;
 } Oscillator;
 
 // Initialize an oscillator at a specified frequency with an associated wave

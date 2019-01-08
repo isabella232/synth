@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 typedef struct Mixer {
-	uint16_t gain_a, gain_b;
+  uint16_t gain_a, gain_b;
 } Mixer;
 
 // Sets the gain for a two channel mixer from 0 to 1.
