@@ -81,12 +81,11 @@ uint16_t EnvelopeProcess(Envelope* e, uint16_t input) {
 
   switch (e->state) {
     case ENVELOPE_IDLE:
-      return 0;
+      break;
     case ENVELOPE_ATTACK:
       // If we're at our maximum attack amount, switch to decay.
       if (e->counter == e->attack_samples) {
         set_state(e, ENVELOPE_DECAY);
-        return input;
       }
       break;
     case ENVELOPE_DECAY:
@@ -101,7 +100,6 @@ uint16_t EnvelopeProcess(Envelope* e, uint16_t input) {
       // If we're at max release, switch to idle.
       if (e->counter == e->release_samples) {
         set_state(e, ENVELOPE_IDLE);
-        return 0;
       }
       break;
   }
