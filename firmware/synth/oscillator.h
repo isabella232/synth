@@ -19,12 +19,12 @@ typedef struct Oscillator {
 
 // Initialize an oscillator at a specified frequency with an associated wave
 // table.
-void OscInit(Oscillator* osc, uint16_t freq_hz, const uint16_t* wave_table);
+void Osc_Init(Oscillator* osc, uint16_t freq_hz, const uint16_t* wave_table);
 
 // Set the frequency of the oscillator.
-void OscSetFreq(Oscillator* osc, uint16_t freq_hz);
+void Osc_SetFreq(Oscillator* osc, uint16_t freq_hz);
 
 // Get the value from the oscillator and increment its internal counter.
-uint16_t OscGetValue(Oscillator* osc);
+uint16_t Osc_GetValue(Oscillator* osc);
 
 #endif  // __OSCILLATOR_H__

@@ -2,13 +2,13 @@
 
 #include "defines.h"
 
-void OscInit(Oscillator* osc, uint16_t freq_hz, const uint16_t* wave_table) {
+void Osc_Init(Oscillator* osc, uint16_t freq_hz, const uint16_t* wave_table) {
   osc->phase = 0;
   osc->wave_table = wave_table;
-  OscSetFreq(osc, freq_hz);
+  Osc_SetFreq(osc, freq_hz);
 }
 
-void OscSetFreq(Oscillator* osc, uint16_t freq_hz) {
+void Osc_SetFreq(Oscillator* osc, uint16_t freq_hz) {
   osc->freq_hz = freq_hz;
 
   // Every time we increment our phase, we want to do so by:
@@ -17,7 +17,7 @@ void OscSetFreq(Oscillator* osc, uint16_t freq_hz) {
   osc->incr = ((uint32_t) osc->freq_hz << 16) / SAMPLE_RATE << 8;
 }
 
-uint16_t OscGetValue(Oscillator* osc) {
+uint16_t Osc_GetValue(Oscillator* osc) {
   // Phase is implicitly modded by 2^32 by overflow.
   osc->phase += osc->incr;
   uint8_t index = osc->phase >> 16;
