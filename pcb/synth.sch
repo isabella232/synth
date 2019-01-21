@@ -1179,8 +1179,6 @@ Wire Wire Line
 Wire Wire Line
 	7950 2350 8200 2350
 Wire Wire Line
-	8000 2700 8200 2700
-Wire Wire Line
 	7950 3050 8200 3050
 Wire Wire Line
 	7950 3400 8200 3400
@@ -1196,4 +1194,6 @@ NoConn ~ 8100 2900
 NoConn ~ 8100 3250
 NoConn ~ 8100 3600
 NoConn ~ 8100 3950
+Wire Wire Line
+	7950 2700 8200 2700
 $EndSCHEMATC
