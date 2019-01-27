@@ -1663,4 +1663,8 @@ Wire Wire Line
 	4750 7300 4950 7300
 Wire Wire Line
 	4550 7000 4950 7000
+Text Label 4300 1700 2    50   ~ 0
+VREF
+Wire Wire Line
+	4300 1700 4550 1700
 $EndSCHEMATC
