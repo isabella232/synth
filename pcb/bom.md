@@ -1,5 +1,7 @@
 # BOM
 
+MCU: [STM32F407VGT6](https://www.mouser.com/ProductDetail/STMicroelectronics/STM32F407VGT6) LQFP-100
+
 Crystal: [ATS08A](https://www.mouser.com/ProductDetail/CTS-Electronic-Components/ATS08A)
 
 Why: Recommended by [AN2867 Revision
