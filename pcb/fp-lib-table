@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Synth_Footprints)(type KiCad)(uri /home/gtaubman/Projects/synth_github/kicad_libs/Synth_Footprints.pretty)(options "")(descr ""))
+)
