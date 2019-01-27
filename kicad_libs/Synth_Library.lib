@@ -1,0 +1,41 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# octave
+#
+DEF octave C 0 40 Y Y 1 F N
+F0 "C" 0 -50 50 H V C CNN
+F1 "octave" 0 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -600 250 600 0 0 1 0 N
+X C 1 -550 350 100 D 50 50 1 1 B
+X A 10 350 350 100 D 50 50 1 1 B
+X A# 11 450 350 100 D 50 50 1 1 B
+X B 12 550 350 100 D 50 50 1 1 B
+X C# 2 -450 350 100 D 50 50 1 1 B
+X D 3 -350 350 100 D 50 50 1 1 B
+X D# 4 -250 350 100 D 50 50 1 1 B
+X E 5 -150 350 100 D 50 50 1 1 B
+X F 6 -50 350 100 D 50 50 1 1 B
+X F# 7 50 350 100 D 50 50 1 1 B
+X G 8 150 350 100 D 50 50 1 1 B
+X G# 9 250 350 100 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# touch_button
+#
+DEF touch_button C 0 40 Y Y 1 F N
+F0 "C" 0 0 50 H V C CNN
+F1 "touch_button" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 150 250 -150 0 1 0 N
+X sense 1 -350 100 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
