@@ -1616,4 +1616,51 @@ Wire Wire Line
 	3250 950  3400 950 
 Wire Wire Line
 	3250 1150 3400 1150
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C9898EA
+P 4550 7100
+F 0 "C?" H 4641 7146 50  0000 L CNN
+F 1 "1uF" H 4641 7055 50  0000 L CNN
+F 2 "" H 4550 7100 50  0001 C CNN
+F 3 "~" H 4550 7100 50  0001 C CNN
+	1    4550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C989ADA
+P 4950 7150
+F 0 "C?" H 4900 7400 50  0000 L CNN
+F 1 "100nF" H 4850 6900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 4988 7000 50  0001 C CNN
+F 3 "~" H 4950 7150 50  0001 C CNN
+	1    4950 7150
+	1    0    0    -1  
+$EndComp
+Text Label 4550 6900 0    50   ~ 0
+VREF
+Wire Wire Line
+	4550 6900 4550 7000
+Connection ~ 4550 7000
+Wire Wire Line
+	4550 7200 4550 7300
+Wire Wire Line
+	4550 7300 4750 7300
+$Comp
+L power:GND #PWR?
+U 1 1 5C9B9001
+P 4750 7300
+F 0 "#PWR?" H 4750 7050 50  0001 C CNN
+F 1 "GND" H 4755 7127 50  0000 C CNN
+F 2 "" H 4750 7300 50  0001 C CNN
+F 3 "" H 4750 7300 50  0001 C CNN
+	1    4750 7300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 7300
+Wire Wire Line
+	4750 7300 4950 7300
+Wire Wire Line
+	4550 7000 4950 7000
 $EndSCHEMATC
