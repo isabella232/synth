@@ -2,7 +2,7 @@
 
 MCU: [STM32F407VGT6](https://www.mouser.com/ProductDetail/STMicroelectronics/STM32F407VGT6) LQFP-100
 
-Crystal: [ATS08A](https://www.mouser.com/ProductDetail/CTS-Electronic-Components/ATS08A)
+Crystal: [ATS08A](https://www.mouser.com/ProductDetail/CTS-Electronic-Components/ATS08A?qs=Mr%252bgrRYddfqUVH22tsgQmw%3D%3D)
 
 Why: Recommended by [AN2867 Revision
 3](http://easyelectronics.ru/img/ARM_kurs/STMstuff/stm32oscrecomend.pdf),
@@ -20,10 +20,12 @@ Why: First one I found that didn't also have tip or ring switches in it.  Does
 take up horizontal space but it can probably be spared.
 
 
-Potentiometers: TBD
+Potentiometers: [Bourne PTV09A](https://www.mouser.com/ProductDetail/Bourns/PTV09A-4025F-B103?qs=sGAEpiMZZMtC25l1F4XBU7WMi1wGK3ZvZ15ABC5GIFs%3d)
+
+Why: KiCad already had a footprint for these.
 
 
-Buttons: [Mountain Switch Narrow](https://www.mouser.com/ProductDetail/Mountain-Switch/101-TS4311T1601-EV)
+Buttons: [Mountain Switch Narrow](https://www.mouser.com/ProductDetail/Mountain-Switch/101-TS4311T1601-EV?qs=sGAEpiMZZMsgGjVA3toVBHVb%2f41oZGWlfjE497o3b4A%3d)
 
 Why: Narrow width should help cram them all in there.  160g force should be easy to press.
 

@@ -388,54 +388,6 @@ Wire Wire Line
 Connection ~ 8400 5500
 Wire Wire Line
 	8400 5500 8400 5900
-Text GLabel 8800 1500 2    50   Input ~ 0
-C2
-Text GLabel 8800 1900 2    50   Input ~ 0
-C#2
-Text GLabel 8800 2300 2    50   Input ~ 0
-D2
-Text GLabel 8800 2700 2    50   Input ~ 0
-D#2
-Text GLabel 8800 3100 2    50   Input ~ 0
-E2
-Text GLabel 8800 3500 2    50   Input ~ 0
-F2
-Text GLabel 8800 3900 2    50   Input ~ 0
-F#2
-Text GLabel 8800 4300 2    50   Input ~ 0
-G2
-Text GLabel 8800 4700 2    50   Input ~ 0
-G#2
-Text GLabel 8800 5100 2    50   Input ~ 0
-A2
-Text GLabel 8800 5500 2    50   Input ~ 0
-A#2
-Text GLabel 8800 5900 2    50   Input ~ 0
-B2
-Text GLabel 8000 1500 2    50   Input ~ 0
-C1
-Text GLabel 8000 1900 2    50   Input ~ 0
-C#1
-Text GLabel 8000 2300 2    50   Input ~ 0
-D1
-Text GLabel 8000 2700 2    50   Input ~ 0
-D#1
-Text GLabel 8000 3100 2    50   Input ~ 0
-E1
-Text GLabel 8000 3500 2    50   Input ~ 0
-F1
-Text GLabel 8000 3900 2    50   Input ~ 0
-F#1
-Text GLabel 8000 4300 2    50   Input ~ 0
-G1
-Text GLabel 8000 4700 2    50   Input ~ 0
-G#1
-Text GLabel 8000 5100 2    50   Input ~ 0
-A1
-Text GLabel 8000 5500 2    50   Input ~ 0
-A#1
-Text GLabel 8000 5900 2    50   Input ~ 0
-B1
 Text Label 6600 3400 0    50   ~ 0
 I2C1_CLOCK
 Text Label 6600 3700 0    50   ~ 0
@@ -470,7 +422,7 @@ U 1 1 5C43D1A4
 P 5650 7050
 F 0 "Y1" H 5650 7318 50  0000 C CNN
 F 1 "Crystal_8" H 5650 7227 50  0000 C CNN
-F 2 "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Horizontal" H 5650 7050 50  0001 C CNN
+F 2 "Synth_Footprints:ATS08A" H 5650 7050 50  0001 C CNN
 F 3 "~" H 5650 7050 50  0001 C CNN
 	1    5650 7050
 	1    0    0    -1  
@@ -481,7 +433,7 @@ U 1 1 5C43D524
 P 5500 7350
 F 0 "C18" H 5250 7400 50  0000 L CNN
 F 1 "20pF" H 5200 7300 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 5538 7200 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5538 7200 50  0001 C CNN
 F 3 "~" H 5500 7350 50  0001 C CNN
 	1    5500 7350
 	1    0    0    -1  
@@ -492,7 +444,7 @@ U 1 1 5C43D5CC
 P 5800 7350
 F 0 "C19" H 5915 7396 50  0000 L CNN
 F 1 "20pF" H 5915 7305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 5838 7200 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5838 7200 50  0001 C CNN
 F 3 "~" H 5800 7350 50  0001 C CNN
 	1    5800 7350
 	1    0    0    -1  
@@ -665,7 +617,7 @@ U 1 1 5C45EDEB
 P 800 6450
 F 0 "C1" H 750 6700 50  0000 L CNN
 F 1 "100nF" H 700 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 838 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 838 6300 50  0001 C CNN
 F 3 "~" H 800 6450 50  0001 C CNN
 	1    800  6450
 	1    0    0    -1  
@@ -676,7 +628,7 @@ U 1 1 5C45F163
 P 1050 6450
 F 0 "C3" H 1000 6700 50  0000 L CNN
 F 1 "100nF" H 950 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 1088 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1088 6300 50  0001 C CNN
 F 3 "~" H 1050 6450 50  0001 C CNN
 	1    1050 6450
 	1    0    0    -1  
@@ -687,7 +639,7 @@ U 1 1 5C45F1BB
 P 1300 6450
 F 0 "C5" H 1250 6700 50  0000 L CNN
 F 1 "100nF" H 1200 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 1338 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1338 6300 50  0001 C CNN
 F 3 "~" H 1300 6450 50  0001 C CNN
 	1    1300 6450
 	1    0    0    -1  
@@ -698,7 +650,7 @@ U 1 1 5C45F211
 P 1550 6450
 F 0 "C6" H 1500 6700 50  0000 L CNN
 F 1 "100nF" H 1450 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 1588 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1588 6300 50  0001 C CNN
 F 3 "~" H 1550 6450 50  0001 C CNN
 	1    1550 6450
 	1    0    0    -1  
@@ -709,7 +661,7 @@ U 1 1 5C45F269
 P 1800 6450
 F 0 "C8" H 1750 6700 50  0000 L CNN
 F 1 "100nF" H 1700 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 1838 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1838 6300 50  0001 C CNN
 F 3 "~" H 1800 6450 50  0001 C CNN
 	1    1800 6450
 	1    0    0    -1  
@@ -720,7 +672,7 @@ U 1 1 5C45F2C3
 P 2050 6450
 F 0 "C10" H 2000 6700 50  0000 L CNN
 F 1 "100nF" H 1950 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 2088 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2088 6300 50  0001 C CNN
 F 3 "~" H 2050 6450 50  0001 C CNN
 	1    2050 6450
 	1    0    0    -1  
@@ -731,7 +683,7 @@ U 1 1 5C45F31F
 P 2300 6450
 F 0 "C12" H 2250 6700 50  0000 L CNN
 F 1 "100nF" H 2200 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 2338 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2338 6300 50  0001 C CNN
 F 3 "~" H 2300 6450 50  0001 C CNN
 	1    2300 6450
 	1    0    0    -1  
@@ -742,7 +694,7 @@ U 1 1 5C45F37D
 P 2550 6450
 F 0 "C14" H 2500 6700 50  0000 L CNN
 F 1 "100nF" H 2450 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 2588 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2588 6300 50  0001 C CNN
 F 3 "~" H 2550 6450 50  0001 C CNN
 	1    2550 6450
 	1    0    0    -1  
@@ -753,7 +705,7 @@ U 1 1 5C45F4E0
 P 800 7200
 F 0 "C2" H 850 7300 50  0000 L CNN
 F 1 "2_2uF" H 700 6950 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 838 7050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 838 7050 50  0001 C CNN
 F 3 "~" H 800 7200 50  0001 C CNN
 	1    800  7200
 	1    0    0    -1  
@@ -764,7 +716,7 @@ U 1 1 5C4609D8
 P 1050 7200
 F 0 "C4" H 1100 7300 50  0000 L CNN
 F 1 "2_2uF" H 950 6950 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 1088 7050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1088 7050 50  0001 C CNN
 F 3 "~" H 1050 7200 50  0001 C CNN
 	1    1050 7200
 	1    0    0    -1  
@@ -872,7 +824,7 @@ U 1 1 5C46C4EB
 P 2800 6450
 F 0 "C15" H 2750 6700 50  0000 L CNN
 F 1 "4_7uF" H 2700 6200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 2838 6300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2838 6300 50  0001 C CNN
 F 3 "~" H 2800 6450 50  0001 C CNN
 	1    2800 6450
 	1    0    0    -1  
@@ -913,143 +865,47 @@ Text Label 9650 3400 0    50   ~ 0
 GLIDE_SPEED
 Text Label 9650 3750 0    50   ~ 0
 MIXER_AMT
-Text GLabel 4400 2800 0    50   Input ~ 0
-C1
-Text GLabel 4400 2900 0    50   Input ~ 0
-C#1
-Text GLabel 4400 3000 0    50   Input ~ 0
-D1
-Text GLabel 4400 3100 0    50   Input ~ 0
-D#1
-Text GLabel 4400 3200 0    50   Input ~ 0
-E1
-Text GLabel 4400 3300 0    50   Input ~ 0
-F1
-Text GLabel 4400 3400 0    50   Input ~ 0
-F#1
-Text GLabel 4400 3500 0    50   Input ~ 0
-G1
-Text GLabel 4400 3600 0    50   Input ~ 0
-G#1
-Text GLabel 4400 3700 0    50   Input ~ 0
-A1
-Text GLabel 4400 3800 0    50   Input ~ 0
-A#1
-Text GLabel 4400 3900 0    50   Input ~ 0
-B1
-Text GLabel 4400 4000 0    50   Input ~ 0
-C2
-Text GLabel 4400 4100 0    50   Input ~ 0
-C#2
-Text GLabel 4400 4200 0    50   Input ~ 0
-D2
-Text GLabel 4400 4300 0    50   Input ~ 0
-D#2
-Text GLabel 4400 4500 0    50   Input ~ 0
-E2
-Text GLabel 4400 4600 0    50   Input ~ 0
-F2
-Text GLabel 4400 4700 0    50   Input ~ 0
-F#2
-Text GLabel 4400 4800 0    50   Input ~ 0
-G2
-Text GLabel 4400 4900 0    50   Input ~ 0
-G#2
-Text GLabel 4400 5000 0    50   Input ~ 0
-A2
-Text GLabel 4400 5100 0    50   Input ~ 0
-A#2
-Text GLabel 4400 5200 0    50   Input ~ 0
-B2
-Wire Wire Line
-	4400 5200 4550 5200
-Wire Wire Line
-	4400 5100 4550 5100
-Wire Wire Line
-	4400 5000 4550 5000
-Wire Wire Line
-	4400 4900 4550 4900
-Wire Wire Line
-	4400 4800 4550 4800
-Wire Wire Line
-	4400 4700 4550 4700
-Wire Wire Line
-	4400 4600 4550 4600
-Wire Wire Line
-	4400 4500 4550 4500
-Wire Wire Line
-	4400 4300 4550 4300
-Wire Wire Line
-	4400 4200 4550 4200
-Wire Wire Line
-	4400 4100 4550 4100
-Wire Wire Line
-	4400 4000 4550 4000
-Wire Wire Line
-	4400 3900 4550 3900
-Wire Wire Line
-	4400 3800 4550 3800
-Wire Wire Line
-	4400 3700 4550 3700
-Wire Wire Line
-	4400 3600 4550 3600
-Wire Wire Line
-	4400 3500 4550 3500
-Wire Wire Line
-	4400 3400 4550 3400
-Wire Wire Line
-	4400 3300 4550 3300
-Wire Wire Line
-	4400 3200 4550 3200
-Wire Wire Line
-	4400 3100 4550 3100
-Wire Wire Line
-	4400 3000 4550 3000
-Wire Wire Line
-	4400 2900 4550 2900
-Wire Wire Line
-	4400 2800 4550 2800
-Text Label 4200 5300 2    50   ~ 0
+Text Label 3450 5050 2    50   ~ 0
 VOLUME
-Text Label 4400 5400 2    50   ~ 0
+Text Label 3650 5150 2    50   ~ 0
 ATTACK
-Text Label 4400 5500 2    50   ~ 0
+Text Label 3650 5250 2    50   ~ 0
 DECAY
-Text Label 4400 5600 2    50   ~ 0
+Text Label 3650 5350 2    50   ~ 0
 SUSTAIN
-Text Label 4400 5700 2    50   ~ 0
+Text Label 3650 5450 2    50   ~ 0
 RELEASE
-Text Label 4400 5800 2    50   ~ 0
+Text Label 3650 5550 2    50   ~ 0
 GLIDE_SPEED
-Text Label 4400 5900 2    50   ~ 0
+Text Label 3650 5650 2    50   ~ 0
 MIXER_AMT
 Wire Wire Line
-	4200 5300 4550 5300
+	3450 5050 3800 5050
 Wire Wire Line
-	4400 5400 4550 5400
+	3650 5150 3800 5150
 Wire Wire Line
-	4400 5500 4550 5500
+	3650 5250 3800 5250
 Wire Wire Line
-	4550 5600 4400 5600
+	3800 5350 3650 5350
 Wire Wire Line
-	4400 5700 4550 5700
+	3650 5450 3800 5450
 Wire Wire Line
-	4400 5800 4550 5800
+	3650 5550 3800 5550
 Wire Wire Line
-	4400 5900 4550 5900
+	3650 5650 3800 5650
 Text Label 9650 4100 0    50   ~ 0
 WAVE_SHAPE
-Text Label 4400 6000 2    50   ~ 0
+Text Label 3650 5750 2    50   ~ 0
 WAVE_SHAPE
 Wire Wire Line
-	4400 6000 4550 6000
+	3650 5750 3800 5750
 $Comp
 L Device:R_POT RV1
 U 1 1 5C5C5FE2
 P 9400 1500
 F 0 "RV1" V 9500 1350 50  0000 C CNN
 F 1 "VOLUME" V 9284 1500 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 1500 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 1500 50  0001 C CNN
 F 3 "~" H 9400 1500 50  0001 C CNN
 	1    9400 1500
 	0    1    1    0   
@@ -1060,7 +916,7 @@ U 1 1 5C5E24DF
 P 9400 1850
 F 0 "RV2" V 9500 1700 50  0000 C CNN
 F 1 "ATTACK" V 9284 1850 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 1850 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 1850 50  0001 C CNN
 F 3 "~" H 9400 1850 50  0001 C CNN
 	1    9400 1850
 	0    1    1    0   
@@ -1071,7 +927,7 @@ U 1 1 5C5E2555
 P 9400 2200
 F 0 "RV3" V 9500 2050 50  0000 C CNN
 F 1 "DECAY" V 9284 2200 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 2200 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 2200 50  0001 C CNN
 F 3 "~" H 9400 2200 50  0001 C CNN
 	1    9400 2200
 	0    1    1    0   
@@ -1082,7 +938,7 @@ U 1 1 5C5E25C9
 P 9400 2550
 F 0 "RV4" V 9500 2400 50  0000 C CNN
 F 1 "SUSTAIN" V 9284 2550 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 2550 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 2550 50  0001 C CNN
 F 3 "~" H 9400 2550 50  0001 C CNN
 	1    9400 2550
 	0    1    1    0   
@@ -1093,7 +949,7 @@ U 1 1 5C5E2643
 P 9400 2900
 F 0 "RV5" V 9500 2750 50  0000 C CNN
 F 1 "RELEASE" V 9284 2900 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 2900 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 2900 50  0001 C CNN
 F 3 "~" H 9400 2900 50  0001 C CNN
 	1    9400 2900
 	0    1    1    0   
@@ -1104,7 +960,7 @@ U 1 1 5C5E26BB
 P 9400 3250
 F 0 "RV6" V 9500 3100 50  0000 C CNN
 F 1 "GLIDE_SPEED" V 9284 3250 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 3250 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 3250 50  0001 C CNN
 F 3 "~" H 9400 3250 50  0001 C CNN
 	1    9400 3250
 	0    1    1    0   
@@ -1115,7 +971,7 @@ U 1 1 5C5E2741
 P 9400 3600
 F 0 "RV7" V 9500 3450 50  0000 C CNN
 F 1 "MIXER_AMT" V 9284 3600 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 3600 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 3600 50  0001 C CNN
 F 3 "~" H 9400 3600 50  0001 C CNN
 	1    9400 3600
 	0    1    1    0   
@@ -1126,7 +982,7 @@ U 1 1 5C5E27B9
 P 9400 3950
 F 0 "RV8" V 9500 3800 50  0000 C CNN
 F 1 "WAVE_SHAPE" V 9284 3950 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3005_Horizontal" H 9400 3950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9400 3950 50  0001 C CNN
 F 3 "~" H 9400 3950 50  0001 C CNN
 	1    9400 3950
 	0    1    1    0   
@@ -1248,7 +1104,7 @@ U 1 1 5C6DCE43
 P 3100 950
 F 0 "R2" V 3000 950 50  0000 C CNN
 F 1 "4.7K" V 3100 950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3030 950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3030 950 50  0001 C CNN
 F 3 "~" H 3100 950 50  0001 C CNN
 	1    3100 950 
 	0    1    1    0   
@@ -1598,7 +1454,7 @@ U 1 1 5C922004
 P 3100 1150
 F 0 "R3" V 3000 1150 50  0000 C CNN
 F 1 "4.7K" V 3100 1150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3030 1150 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3030 1150 50  0001 C CNN
 F 3 "~" H 3100 1150 50  0001 C CNN
 	1    3100 1150
 	0    1    1    0   
@@ -1622,7 +1478,7 @@ U 1 1 5C9898EA
 P 1700 7150
 F 0 "C7" H 1791 7196 50  0000 L CNN
 F 1 "1uF" H 1791 7105 50  0000 L CNN
-F 2 "" H 1700 7150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1700 7150 50  0001 C CNN
 F 3 "~" H 1700 7150 50  0001 C CNN
 	1    1700 7150
 	1    0    0    -1  
@@ -1633,7 +1489,7 @@ U 1 1 5C989ADA
 P 2100 7200
 F 0 "C11" H 2150 7300 50  0000 L CNN
 F 1 "100nF" H 2150 7100 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 2138 7050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2138 7050 50  0001 C CNN
 F 3 "~" H 2100 7200 50  0001 C CNN
 	1    2100 7200
 	1    0    0    -1  
@@ -1673,7 +1529,7 @@ U 1 1 5CA2A068
 P 2400 7150
 F 0 "C13" H 2491 7196 50  0000 L CNN
 F 1 "1uF" H 2491 7105 50  0000 L CNN
-F 2 "" H 2400 7150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2400 7150 50  0001 C CNN
 F 3 "~" H 2400 7150 50  0001 C CNN
 	1    2400 7150
 	1    0    0    -1  
@@ -1684,7 +1540,7 @@ U 1 1 5CA2A06E
 P 2800 7200
 F 0 "C16" H 2850 7300 50  0000 L CNN
 F 1 "100nF" H 2850 7100 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D8.0mm_P15.00mm_Horizontal" H 2838 7050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2838 7050 50  0001 C CNN
 F 3 "~" H 2800 7200 50  0001 C CNN
 	1    2800 7200
 	1    0    0    -1  
@@ -1761,4 +1617,196 @@ Connection ~ 2100 7900
 Wire Wire Line
 	2400 7800 2400 7900
 Connection ~ 2400 7900
+Text Label 8100 1500 0    50   ~ 0
+C1
+Text Label 8100 1900 0    50   ~ 0
+C#1
+Text Label 8100 2300 0    50   ~ 0
+D1
+Text Label 8100 2700 0    50   ~ 0
+D#1
+Text Label 8100 3100 0    50   ~ 0
+E1
+Text Label 8100 3500 0    50   ~ 0
+F1
+Text Label 8100 3900 0    50   ~ 0
+F#1
+Text Label 8100 4300 0    50   ~ 0
+G1
+Text Label 8100 4700 0    50   ~ 0
+G#1
+Text Label 8100 5100 0    50   ~ 0
+A1
+Text Label 8100 5500 0    50   ~ 0
+A#1
+Text Label 8100 5900 0    50   ~ 0
+B1
+Wire Wire Line
+	8000 5900 8100 5900
+Wire Wire Line
+	8000 5500 8100 5500
+Wire Wire Line
+	8000 5100 8100 5100
+Wire Wire Line
+	8000 4700 8100 4700
+Wire Wire Line
+	8000 4300 8100 4300
+Wire Wire Line
+	8000 3900 8100 3900
+Wire Wire Line
+	8000 3500 8100 3500
+Wire Wire Line
+	8000 3100 8100 3100
+Wire Wire Line
+	8000 2700 8100 2700
+Wire Wire Line
+	8000 2300 8100 2300
+Wire Wire Line
+	8000 1900 8100 1900
+Wire Wire Line
+	8000 1500 8100 1500
+Text Label 8900 1500 0    50   ~ 0
+C2
+Text Label 8900 1900 0    50   ~ 0
+C#2
+Text Label 8900 2300 0    50   ~ 0
+D2
+Text Label 8900 2700 0    50   ~ 0
+D#2
+Text Label 8900 3100 0    50   ~ 0
+E2
+Text Label 8900 3500 0    50   ~ 0
+F2
+Text Label 8900 3900 0    50   ~ 0
+F#2
+Text Label 8900 4300 0    50   ~ 0
+G2
+Text Label 8900 4700 0    50   ~ 0
+G#2
+Text Label 8900 5100 0    50   ~ 0
+A2
+Text Label 8900 5500 0    50   ~ 0
+A#2
+Text Label 8900 5900 0    50   ~ 0
+B2
+Wire Wire Line
+	8800 5900 8900 5900
+Wire Wire Line
+	8800 5500 8900 5500
+Wire Wire Line
+	8800 5100 8900 5100
+Wire Wire Line
+	8800 4700 8900 4700
+Wire Wire Line
+	8800 4300 8900 4300
+Wire Wire Line
+	8800 3900 8900 3900
+Wire Wire Line
+	8800 3500 8900 3500
+Wire Wire Line
+	8800 3100 8900 3100
+Wire Wire Line
+	8800 2700 8900 2700
+Wire Wire Line
+	8800 2300 8900 2300
+Wire Wire Line
+	8800 1900 8900 1900
+Wire Wire Line
+	8800 1500 8900 1500
+Text Label 6600 2300 0    50   ~ 0
+B2
+Text Label 6600 2200 0    50   ~ 0
+A#2
+Text Label 6600 2100 0    50   ~ 0
+A2
+Text Label 6600 2000 0    50   ~ 0
+G#2
+Text Label 6600 1900 0    50   ~ 0
+G2
+Text Label 6600 5400 0    50   ~ 0
+F#2
+Text Label 6600 5300 0    50   ~ 0
+F2
+Text Label 6600 5100 0    50   ~ 0
+E2
+Text Label 4400 6000 2    50   ~ 0
+D#2
+Text Label 4400 5900 2    50   ~ 0
+D2
+Text Label 4400 5800 2    50   ~ 0
+C#2
+Text Label 4400 5700 2    50   ~ 0
+C2
+Text Label 4400 5600 2    50   ~ 0
+B1
+Text Label 4400 5500 2    50   ~ 0
+A#1
+Text Label 4400 5400 2    50   ~ 0
+A1
+Text Label 4400 5300 2    50   ~ 0
+G#1
+Text Label 6600 4300 0    50   ~ 0
+G1
+Text Label 6600 4200 0    50   ~ 0
+F#1
+Text Label 6600 4100 0    50   ~ 0
+F1
+Text Label 6600 4000 0    50   ~ 0
+E1
+Text Label 6600 3900 0    50   ~ 0
+D#1
+Text Label 6600 3800 0    50   ~ 0
+D1
+Text Label 4400 4300 2    50   ~ 0
+C#1
+Text Label 4400 4200 2    50   ~ 0
+C1
+Wire Wire Line
+	4400 4200 4550 4200
+Wire Wire Line
+	4400 4300 4550 4300
+Wire Wire Line
+	4400 5300 4550 5300
+Wire Wire Line
+	4400 5400 4550 5400
+Wire Wire Line
+	4400 5500 4550 5500
+Wire Wire Line
+	4400 5600 4550 5600
+Wire Wire Line
+	4400 5700 4550 5700
+Wire Wire Line
+	4400 5800 4550 5800
+Wire Wire Line
+	4400 5900 4550 5900
+Wire Wire Line
+	4400 6000 4550 6000
+Wire Wire Line
+	6350 5400 6600 5400
+Wire Wire Line
+	6350 5300 6600 5300
+Wire Wire Line
+	6350 5100 6600 5100
+Wire Wire Line
+	6350 4300 6600 4300
+Wire Wire Line
+	6350 4200 6600 4200
+Wire Wire Line
+	6350 4100 6600 4100
+Wire Wire Line
+	6350 4000 6600 4000
+Wire Wire Line
+	6350 3900 6600 3900
+Wire Wire Line
+	6350 3800 6600 3800
+Wire Wire Line
+	6350 2300 6600 2300
+Wire Wire Line
+	6350 2200 6600 2200
+Wire Wire Line
+	6350 2100 6600 2100
+Wire Wire Line
+	6350 2000 6600 2000
+Wire Wire Line
+	6350 1900 6600 1900
 $EndSCHEMATC
