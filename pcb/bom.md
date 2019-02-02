@@ -20,9 +20,11 @@ Why: First one I found that didn't also have tip or ring switches in it.  Does
 take up horizontal space but it can probably be spared.
 
 
-Potentiometers: [Bourne PTV09A](https://www.mouser.com/ProductDetail/Bourns/PTV09A-4025F-B103?qs=sGAEpiMZZMtC25l1F4XBU7WMi1wGK3ZvZ15ABC5GIFs%3d)
-
-Why: KiCad already had a footprint for these.
+Potentiometers:
+-  [Bourne PTV09A](https://www.mouser.com/ProductDetail/Bourns/PTV09A-4025F-B103?qs=sGAEpiMZZMtC25l1F4XBU7WMi1wGK3ZvZ15ABC5GIFs%3d)
+    Why: KiCad already had a footprint for these.
+-  [ALPS RK09K1130A70](https://www.mouser.com/ProductDetail/ALPS/RK09K1130A70?qs=6EGMNY9ZYDSOs3JO8Oeg1w%3D%3D)
+    Why: Cheaper than the above.
 
 
 Buttons: [Mountain Switch Narrow](https://www.mouser.com/ProductDetail/Mountain-Switch/101-TS4311T1601-EV?qs=sGAEpiMZZMsgGjVA3toVBHVb%2f41oZGWlfjE497o3b4A%3d)
