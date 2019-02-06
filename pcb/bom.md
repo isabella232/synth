@@ -14,7 +14,7 @@ DAC: [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ)
 Why: Same as what's on the STM32F4 discovery board.
 
 
-Headphone Jack: [CUI TRS](https://www.mouser.com/ProductDetail/CUI/SJ1-3523N)
+Headphone Jack: [CUI TRS](https://www.mouser.com/ProductDetail/CUI/SJ1-3523N?qs=WyjlAZoYn50aNl0vAhb3Tg%3D%3D)
 
 Why: First one I found that didn't also have tip or ring switches in it.  Does
 take up horizontal space but it can probably be spared.
