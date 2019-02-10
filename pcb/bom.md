@@ -9,7 +9,7 @@ Why: Recommended by [AN2867 Revision
 although the newest (Rev 11) doesn't mention it.
 
 
-DAC: [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ)
+DAC: [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ) Or even better [TLV320DAC26](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV320DAC26IRHBR?qs=sGAEpiMZZMv%252bLKsN4bqzyiJsZIbtISVFY0fihiLYnzk%3d)
 
 Why: Same as what's on the STM32F4 discovery board.
 
