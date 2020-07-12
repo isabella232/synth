@@ -9,9 +9,9 @@ Why: Recommended by [AN2867 Revision
 although the newest (Rev 11) doesn't mention it.
 
 
-DAC: [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ) Or even better [TLV320DAC26](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV320DAC26IRHBR?qs=sGAEpiMZZMv%252bLKsN4bqzyiJsZIbtISVFY0fihiLYnzk%3d)
+DAC: [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ) Or even better [TLV320DAC26](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV320DAC26IRHBR?qs=sGAEpiMZZMv%252bLKsN4bqzyiJsZIbtISVFY0fihiLYnzk%3d) or [TLV320DAC32](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV320DAC32IRHBR?qs=sGAEpiMZZMtuedWc5vOqGAv3iOMzI%252BMxln3lJ9qKgHQ%3D)
 
-Why: Same as what's on the STM32F4 discovery board.
+Why: CS43L22 is on the STM32F4 discovery board.
 
 
 Headphone Jack: [CUI SJ1-3533NG](https://www.mouser.com/ProductDetail/CUI/SJ1-3533NG?qs=WyjlAZoYn53GjNky%252bNFGCA==)
