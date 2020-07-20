@@ -9,9 +9,11 @@ Why: Recommended by [AN2867 Revision
 although the newest (Rev 11) doesn't mention it.
 
 
+<<<<<<< HEAD
 DAC options:
 1. [CS4344](https://www.cirrus.com/products/cs4344-45-48/) - Easy to solder, cheap, available at JLCPCB's assembly if I choose to use that.
-1. [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ) (what's on the STM32F4 discovery board)
+1. [TLV320DAC32](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV320DAC32IRHBR?qs=sGAEpiMZZMtuedWc5vOqGAv3iOMzI%252BMxln3lJ9qKgHQ%3D)
+1. [CS43L22](https://www.mouser.com/ProductDetail/Cirrus-Logic/CS43L22-CNZ) - What's on the STM32F4 discovery board.
 1. [TLV320DAC26](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV320DAC26IRHBR?qs=sGAEpiMZZMv%252bLKsN4bqzyiJsZIbtISVFY0fihiLYnzk%3d)
 
 Headphone Jack: [CUI SJ1-3533NG](https://www.mouser.com/ProductDetail/CUI/SJ1-3533NG?qs=WyjlAZoYn53GjNky%252bNFGCA==)
